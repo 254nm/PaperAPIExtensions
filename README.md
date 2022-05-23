@@ -3,4 +3,4 @@
 
 ### PaperAPIExtensions adds: (So far)
 * ItemStackCreateEvent (Called when the constructor of the NMS item stack is called) ✓
-* PacketEvent (Called when a packet is send or received) ✓
+* PacketEvent (Called when a packet is sent or received) ✓

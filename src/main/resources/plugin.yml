@@ -1,0 +1,5 @@
+name: PaperAPIExtentions
+version: '${version}'
+main: me.txmc.paperapiextentions.PaperAPIExtensions
+authors: [ 254n_m ]
+description: Extentions for the paper api

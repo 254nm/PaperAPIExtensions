@@ -2,28 +2,29 @@ package me.txmc.paperapiextentions;
 
 import lombok.Getter;
 import lombok.SneakyThrows;
-import me.txmc.paperapiextentions.mixins.EventTweaker;
-import me.txmc.rtmixin.RtMixin;
-import org.bukkit.command.defaults.ReloadCommand;
+import me.txmc.paperapiextentions.mixin.MixinManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.lang.instrument.Instrumentation;
 
 @Getter
 public final class PaperAPIExtensions extends JavaPlugin {
-    private static Instrumentation inst;
+    private static PaperAPIExtensions instance;
+
+    public static PaperAPIExtensions getInstance() {
+        return instance;
+    }
 
 
     @Override
     @SneakyThrows
     public void onLoad() {
-        Instrumentation inst = RtMixin.attachAgent().orElseThrow(RuntimeException::new);
-        PaperAPIExtensions.inst = inst;
-        RtMixin.processMixins(EventTweaker.class);
+        instance = this;
+        new MixinManager().init();
     }
 
     @Override
     public void onEnable() {
+        System.out.println(instance);
+        getServer().getPluginManager().registerEvents(new TestListener(), this);
     }
 
     @Override

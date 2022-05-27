@@ -1,4 +1,4 @@
-package me.txmc.paperapiextentions.mixins;
+package me.txmc.paperapiextentions.mixin.mixins;
 
 import me.txmc.paperapiextentions.events.ItemStackCreateEvent;
 import me.txmc.rtmixin.CallbackInfo;
@@ -12,10 +12,10 @@ import org.bukkit.Bukkit;
 
 /**
  * @author 254n_m
- * @since 5/22/22/ 3:14 PM
+ * @since 5/25/22/ 1:51 AM
  * This file was created as a part of PaperAPIExtensions
  */
-public class EventTweaker {
+public class MixinItemStack {
     @Inject(
             info = @MethodInfo(_class = ItemStack.class, name = "<init>", sig = NBTTagCompound.class, rtype = void.class),
             at = @At(pos = At.Position.TAIL)

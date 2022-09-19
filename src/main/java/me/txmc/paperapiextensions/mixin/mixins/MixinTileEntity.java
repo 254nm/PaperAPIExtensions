@@ -1,6 +1,6 @@
-package me.txmc.paperapiextenstions.mixin.mixins;
+package me.txmc.paperapiextensions.mixin.mixins;
 
-import me.txmc.paperapiextenstions.events.TileEntityCreateEvent;
+import me.txmc.paperapiextensions.events.TileEntityCreateEvent;
 import me.txmc.rtmixin.CallbackInfo;
 import net.minecraft.server.v1_12_R1.*;
 import org.apache.logging.log4j.core.Logger;

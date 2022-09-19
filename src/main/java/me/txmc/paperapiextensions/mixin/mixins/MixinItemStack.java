@@ -1,6 +1,6 @@
-package me.txmc.paperapiextenstions.mixin.mixins;
+package me.txmc.paperapiextensions.mixin.mixins;
 
-import me.txmc.paperapiextenstions.events.ItemStackCreateEvent;
+import me.txmc.paperapiextensions.events.ItemStackCreateEvent;
 import me.txmc.rtmixin.CallbackInfo;
 import me.txmc.rtmixin.mixin.At;
 import me.txmc.rtmixin.mixin.Inject;

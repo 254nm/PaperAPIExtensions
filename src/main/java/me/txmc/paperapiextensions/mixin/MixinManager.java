@@ -1,8 +1,7 @@
-package me.txmc.paperapiextenstions.mixin;
+package me.txmc.paperapiextensions.mixin;
 
-import me.txmc.paperapiextenstions.mixin.mixins.MixinItemStack;
+import me.txmc.paperapiextensions.mixin.mixins.MixinItemStack;
 import me.txmc.rtmixin.RtMixin;
-import net.minecraft.server.v1_12_R1.ChunkProviderServer;
 
 /**
  * @author 254n_m

@@ -1,8 +1,8 @@
-package me.txmc.paperapiextenstions;
+package me.txmc.paperapiextensions;
 
 import lombok.Getter;
 import lombok.SneakyThrows;
-import me.txmc.paperapiextenstions.mixin.MixinManager;
+import me.txmc.paperapiextensions.mixin.MixinManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 @Getter

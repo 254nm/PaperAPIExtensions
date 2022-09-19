@@ -1,11 +1,7 @@
-package me.txmc.paperapiextentions.mixin.mixins;
+package me.txmc.paperapiextenstions.mixin.mixins;
 
-import me.txmc.paperapiextentions.events.TileEntityCreateEvent;
+import me.txmc.paperapiextenstions.events.TileEntityCreateEvent;
 import me.txmc.rtmixin.CallbackInfo;
-import me.txmc.rtmixin.mixin.At;
-import me.txmc.rtmixin.mixin.Inject;
-import me.txmc.rtmixin.mixin.MethodInfo;
-import me.txmc.rtmixin.mixin.Replace;
 import net.minecraft.server.v1_12_R1.*;
 import org.apache.logging.log4j.core.Logger;
 import org.bukkit.Bukkit;
@@ -34,7 +30,7 @@ public class MixinTileEntity {
         }
     }
 
-    @Replace(info = @MethodInfo(_class = TileEntity.class, name = "create", sig = {World.class, NBTTagCompound.class}, rtype = TileEntity.class))
+//    @Replace(info = @MethodInfo(_class = TileEntity.class, name = "create", sig = {World.class, NBTTagCompound.class}, rtype = TileEntity.class))
     public static TileEntity onTileEntityCreate(CallbackInfo ci) {
         World world = (World) ci.getParameters()[0];
         NBTTagCompound compound = (NBTTagCompound) ci.getParameters()[1];
@@ -66,9 +62,4 @@ public class MixinTileEntity {
                 evtCompound.setInt("z", original.getInt("z"));
         }
     }
-//    @Replace(info = @MethodInfo(_class = EntityLiving.class, name = "isInteractable", rtype = boolean.class))
-//    public static boolean modEnderCrystal(CallbackInfo ci) {
-//        System.out.println("Called entity ");
-//        return false;
-//    }
 }

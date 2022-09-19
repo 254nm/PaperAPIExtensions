@@ -20,6 +20,7 @@ dependencies {
     implementation("me.txmc:protocolapi:1.1-SNAPSHOT_1.12.2")
     implementation("me.txmc:rtmixin:1.3-BETA")
     compileOnly("com.destroystokyo.paper:paper-jar:1.12.2-R0.1-SNAPSHOT")
+    compileOnly(files(File("${project.projectDir}/lib/PaperAPIExtensions-1.0-SNAPSHOT-all.jar").absolutePath))
     compileOnly("org.projectlombok:lombok:1.18.24")
     annotationProcessor("org.projectlombok:lombok:1.18.22")
 }

@@ -1,8 +1,7 @@
-package me.txmc.paperapiextentions.events;
+package me.txmc.paperapiextenstions.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import net.minecraft.server.v1_12_R1.NBTTagCompound;
 import net.minecraft.server.v1_12_R1.TileEntity;

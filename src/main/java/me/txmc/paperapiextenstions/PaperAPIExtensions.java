@@ -1,8 +1,8 @@
-package me.txmc.paperapiextentions;
+package me.txmc.paperapiextenstions;
 
 import lombok.Getter;
 import lombok.SneakyThrows;
-import me.txmc.paperapiextentions.mixin.MixinManager;
+import me.txmc.paperapiextenstions.mixin.MixinManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 @Getter
@@ -23,8 +23,6 @@ public final class PaperAPIExtensions extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        System.out.println(instance);
-        getServer().getPluginManager().registerEvents(new TestListener(), this);
     }
 
     @Override

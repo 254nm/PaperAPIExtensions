@@ -1,4 +1,4 @@
-package me.txmc.paperapiextentions.events;
+package me.txmc.paperapiextenstions.events;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,5 +1,6 @@
 package me.txmc.paperapiextensions.mixin;
 
+import me.txmc.paperapiextensions.mixin.mixins.MixinEntity;
 import me.txmc.paperapiextensions.mixin.mixins.MixinItemStack;
 import me.txmc.rtmixin.RtMixin;
 
@@ -12,5 +13,6 @@ public class MixinManager {
     public void init() {
         RtMixin.attachAgent();
         RtMixin.processMixins(MixinItemStack.class);
+        RtMixin.processMixins(MixinEntity.class);
     }
 }
